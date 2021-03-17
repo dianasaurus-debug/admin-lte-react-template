@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/dist/jquery.min"
+import "admin-lte/dist/css/adminlte.css"
+import "admin-lte/dist/js/adminlte"
+import "bootstrap/dist/js/bootstrap.bundle"
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
+import Footer from "./components/Footer";
+import Content from './components/Content';
+import 'chart.js/dist/Chart';
+import 'admin-lte/dist/js/demo';
+import 'admin-lte/dist/js/pages/dashboard3'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div>
+          <Sidebar/>
+          <Navbar/>
+          <Content/>
+          <Footer/>
+      </div>
+      );
 }
 
 export default App;
